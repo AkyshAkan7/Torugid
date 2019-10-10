@@ -16,6 +16,7 @@
 		CE9A1143233DA7D9006860BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A1141233DA7D9006860BF /* LaunchScreen.storyboard */; };
 		CE9A114E233DA7D9006860BF /* TourgidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A114D233DA7D9006860BF /* TourgidTests.swift */; };
 		CE9A1159233DA7D9006860BF /* TourgidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1158233DA7D9006860BF /* TourgidUITests.swift */; };
+		CE9A1168233DB500006860BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A1167233DB500006860BF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CE9A1154233DA7D9006860BF /* TourgidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourgidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A1158233DA7D9006860BF /* TourgidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourgidUITests.swift; sourceTree = "<group>"; };
 		CE9A115A233DA7D9006860BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9A1167233DB500006860BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9A1168233DB500006860BF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				CE9A114C233DA7D9006860BF /* TourgidTests */,
 				CE9A1157233DA7D9006860BF /* TourgidUITests */,
 				CE9A1131233DA7D8006860BF /* Products */,
+				CE9A1166233DB500006860BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 				CE9A115A233DA7D9006860BF /* Info.plist */,
 			);
 			path = TourgidUITests;
+			sourceTree = "<group>";
+		};
+		CE9A1166233DB500006860BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A1167233DB500006860BF /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
