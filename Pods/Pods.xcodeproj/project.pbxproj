@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0649F44D798F4E6252D2BAF82940FA9D /* Pods-TourgidTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E525FCD12E71271DA1EC53E75D7BC8 /* Pods-TourgidTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF23192DF5B2810FFAE853C7555DBCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		30776A213AFB7E0F1530C59B998D278D /* Pods-Tourgid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B077E26262BBF1F7AEDC41354AA66 /* Pods-Tourgid-dummy.m */; };
+		58DF3468F0E09C2E8A7613D88E78A73D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		802BD1EDAF29C991DFDD5D976D78BE20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		816FB2004116DE7943F2CF731957C192 /* Pods-Tourgid-TourgidUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF3619ED00AC11F531582D055CF189E /* Pods-Tourgid-TourgidUITests-dummy.m */; };
+		9955AA347A2DEF3286C6D21D21D04813 /* Pods-TourgidTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEFAD7D57038044B61CD9A6BCE57B0 /* Pods-TourgidTests-dummy.m */; };
+		AFEF6BDABBFD2CAD08EB582ED3FA3A15 /* Pods-Tourgid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EC26778A027371258CEC835286C23E /* Pods-Tourgid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04A3D2DF4F57854F51681C1B6657A30 /* Pods-Tourgid-TourgidUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EA4F047B895C7D6C78C7A20E8E776A6 /* Pods-Tourgid-TourgidUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27273B1C360E979322080404B17B8F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		902A6F2B0C5E6DF3F88920E24AAC93C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66107F9FCD76BD85851B6F5C8C030B47;
+			remoteInfo = "Pods-Tourgid";
+		};
+		BF0334E0ACA61842517A8015F7B3A10D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E525FCD12E71271DA1EC53E75D7BC8 /* Pods-TourgidTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TourgidTests-umbrella.h"; sourceTree = "<group>"; };
+		0FA9C68C4D8377EB0151231308FFFA98 /* Pods-TourgidTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TourgidTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2AFD7210870BBCC95109D67B4FC464D1 /* Pods-Tourgid-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tourgid-resources.sh"; sourceTree = "<group>"; };
+		2B64AAB578A0888243347149661194D5 /* Pods-Tourgid-TourgidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tourgid-TourgidUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BF3619ED00AC11F531582D055CF189E /* Pods-Tourgid-TourgidUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tourgid-TourgidUITests-dummy.m"; sourceTree = "<group>"; };
+		2D0327212D4AD959DC27AC93526E8FC6 /* Pods-TourgidTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TourgidTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		31EC26778A027371258CEC835286C23E /* Pods-Tourgid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tourgid-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3328875EF07550E0FE953FAA0B5C1AD5 /* Pods-Tourgid-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tourgid-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C59CF8F7BA697243AB801DCC35609DE /* Pods-Tourgid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tourgid.debug.xcconfig"; sourceTree = "<group>"; };
+		3D1962DE193934FB1EAE4265AECB5810 /* Pods-TourgidTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TourgidTests.modulemap"; sourceTree = "<group>"; };
+		511D8F1CF64CFFF489D6F01A3C5987C5 /* Pods-Tourgid-TourgidUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tourgid-TourgidUITests.modulemap"; sourceTree = "<group>"; };
+		521C05AB6AE7B9910A233B63B560FF70 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		54AEFAD7D57038044B61CD9A6BCE57B0 /* Pods-TourgidTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TourgidTests-dummy.m"; sourceTree = "<group>"; };
+		551F63664537853F32071E13FE4CC4FF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		56E930B64D9B3FF179656D8C4AFA71F2 /* Pods-Tourgid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tourgid.modulemap"; sourceTree = "<group>"; };
+		599C9606624EEA579B85BE1427487C43 /* Pods-TourgidTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TourgidTests-Info.plist"; sourceTree = "<group>"; };
+		5BEF52437C1E4AB431C3FBA86771C36E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		5C2C02D29AE3C3FC25DDEDC170E78E07 /* Pods_Tourgid_TourgidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tourgid_TourgidUITests.framework; path = "Pods-Tourgid-TourgidUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B0592C95CF5C08F8906358697F340E /* Pods-Tourgid-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tourgid-Info.plist"; sourceTree = "<group>"; };
+		6B6B077E26262BBF1F7AEDC41354AA66 /* Pods-Tourgid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tourgid-dummy.m"; sourceTree = "<group>"; };
+		6EA4F047B895C7D6C78C7A20E8E776A6 /* Pods-Tourgid-TourgidUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tourgid-TourgidUITests-umbrella.h"; sourceTree = "<group>"; };
+		77B6BFFE3811D93D4DF440D1C5CFCD07 /* Pods_TourgidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TourgidTests.framework; path = "Pods-TourgidTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2B5D150CEE6BBB83CC0A67F1F8E93A /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		990DFC0704C3799FC93936A84AB0A321 /* Pods-Tourgid-TourgidUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tourgid-TourgidUITests-resources.sh"; sourceTree = "<group>"; };
+		9C48868A5B97CFBF2F650DE908422E5B /* Pods-TourgidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TourgidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1E2C79EE32BF292B15D47F470108E88 /* Pods-Tourgid-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tourgid-acknowledgements.plist"; sourceTree = "<group>"; };
+		A6DB51A9D2BE913D6FE315CCD3A40CFE /* Pods-TourgidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TourgidTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB87E0B2D36831D64140129F9E170105 /* Pods-Tourgid-TourgidUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tourgid-TourgidUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B3E629B8EEB71C47DCF71AE7D17AA881 /* Pods-Tourgid-TourgidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tourgid-TourgidUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C1A01C14A7989ECA604E00E39A2C99E7 /* Pods_Tourgid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tourgid.framework; path = "Pods-Tourgid.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		CE378EAE31E7E5CE27A4557C63C04EBE /* Pods-Tourgid-TourgidUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tourgid-TourgidUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9B68F239524CA60C69043E19B2C91A5 /* Pods-Tourgid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tourgid.release.xcconfig"; sourceTree = "<group>"; };
+		F283C40783EB39A64E58801B5309D34F /* Pods-Tourgid-TourgidUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tourgid-TourgidUITests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20A9FCFA59D31932CB831C654AC0ACD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802BD1EDAF29C991DFDD5D976D78BE20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F755943BCD20570767225676344B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DF3468F0E09C2E8A7613D88E78A73D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3631EF04D6CFE96BA55F21B0EBD059B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF23192DF5B2810FFAE853C7555DBCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10DE5F934561281275ACAE8BD857D1F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1A01C14A7989ECA604E00E39A2C99E7 /* Pods_Tourgid.framework */,
+				5C2C02D29AE3C3FC25DDEDC170E78E07 /* Pods_Tourgid_TourgidUITests.framework */,
+				77B6BFFE3811D93D4DF440D1C5CFCD07 /* Pods_TourgidTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4EB33A076BB7654667F327222F2A96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		4EC18A1BDFFC7FA965D078F2B26375FB /* Pods-Tourgid */ = {
+			isa = PBXGroup;
+			children = (
+				56E930B64D9B3FF179656D8C4AFA71F2 /* Pods-Tourgid.modulemap */,
+				3328875EF07550E0FE953FAA0B5C1AD5 /* Pods-Tourgid-acknowledgements.markdown */,
+				A1E2C79EE32BF292B15D47F470108E88 /* Pods-Tourgid-acknowledgements.plist */,
+				6B6B077E26262BBF1F7AEDC41354AA66 /* Pods-Tourgid-dummy.m */,
+				65B0592C95CF5C08F8906358697F340E /* Pods-Tourgid-Info.plist */,
+				2AFD7210870BBCC95109D67B4FC464D1 /* Pods-Tourgid-resources.sh */,
+				31EC26778A027371258CEC835286C23E /* Pods-Tourgid-umbrella.h */,
+				3C59CF8F7BA697243AB801DCC35609DE /* Pods-Tourgid.debug.xcconfig */,
+				E9B68F239524CA60C69043E19B2C91A5 /* Pods-Tourgid.release.xcconfig */,
+			);
+			name = "Pods-Tourgid";
+			path = "Target Support Files/Pods-Tourgid";
+			sourceTree = "<group>";
+		};
+		5662326BC0F91166D9A538585A92C1DE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC18A1BDFFC7FA965D078F2B26375FB /* Pods-Tourgid */,
+				E902F53BDC64340149556BFFB8286EEB /* Pods-Tourgid-TourgidUITests */,
+				5FAAEEF07F14E2EA61FC65F03C911CCC /* Pods-TourgidTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5FAAEEF07F14E2EA61FC65F03C911CCC /* Pods-TourgidTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1962DE193934FB1EAE4265AECB5810 /* Pods-TourgidTests.modulemap */,
+				0FA9C68C4D8377EB0151231308FFFA98 /* Pods-TourgidTests-acknowledgements.markdown */,
+				2D0327212D4AD959DC27AC93526E8FC6 /* Pods-TourgidTests-acknowledgements.plist */,
+				54AEFAD7D57038044B61CD9A6BCE57B0 /* Pods-TourgidTests-dummy.m */,
+				599C9606624EEA579B85BE1427487C43 /* Pods-TourgidTests-Info.plist */,
+				09E525FCD12E71271DA1EC53E75D7BC8 /* Pods-TourgidTests-umbrella.h */,
+				9C48868A5B97CFBF2F650DE908422E5B /* Pods-TourgidTests.debug.xcconfig */,
+				A6DB51A9D2BE913D6FE315CCD3A40CFE /* Pods-TourgidTests.release.xcconfig */,
+			);
+			name = "Pods-TourgidTests";
+			path = "Target Support Files/Pods-TourgidTests";
+			sourceTree = "<group>";
+		};
+		635C391EBEDEECEBED7C587C09F80C29 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				7A2FE3E30CF6F7F1C609C86668A4411D /* Frameworks */,
+				CB4FFE30125DB944A69FABB13465CBF9 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		6DC984D737DB841E41A9D175E8069AED /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E31401A986F325F1E4863EC2F7E087C0 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7A2FE3E30CF6F7F1C609C86668A4411D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BEF52437C1E4AB431C3FBA86771C36E /* GoogleMaps.framework */,
+				8C2B5D150CEE6BBB83CC0A67F1F8E93A /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEB2EB54AE51001ACA52CF2A5CD80017 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6DC984D737DB841E41A9D175E8069AED /* Base */,
+				635C391EBEDEECEBED7C587C09F80C29 /* Maps */,
+				2C4EB33A076BB7654667F327222F2A96 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB4FFE30125DB944A69FABB13465CBF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				521C05AB6AE7B9910A233B63B560FF70 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
+				10DE5F934561281275ACAE8BD857D1F3 /* Products */,
+				5662326BC0F91166D9A538585A92C1DE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEB2EB54AE51001ACA52CF2A5CD80017 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E31401A986F325F1E4863EC2F7E087C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551F63664537853F32071E13FE4CC4FF /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E902F53BDC64340149556BFFB8286EEB /* Pods-Tourgid-TourgidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				511D8F1CF64CFFF489D6F01A3C5987C5 /* Pods-Tourgid-TourgidUITests.modulemap */,
+				AB87E0B2D36831D64140129F9E170105 /* Pods-Tourgid-TourgidUITests-acknowledgements.markdown */,
+				CE378EAE31E7E5CE27A4557C63C04EBE /* Pods-Tourgid-TourgidUITests-acknowledgements.plist */,
+				2BF3619ED00AC11F531582D055CF189E /* Pods-Tourgid-TourgidUITests-dummy.m */,
+				F283C40783EB39A64E58801B5309D34F /* Pods-Tourgid-TourgidUITests-Info.plist */,
+				990DFC0704C3799FC93936A84AB0A321 /* Pods-Tourgid-TourgidUITests-resources.sh */,
+				6EA4F047B895C7D6C78C7A20E8E776A6 /* Pods-Tourgid-TourgidUITests-umbrella.h */,
+				2B64AAB578A0888243347149661194D5 /* Pods-Tourgid-TourgidUITests.debug.xcconfig */,
+				B3E629B8EEB71C47DCF71AE7D17AA881 /* Pods-Tourgid-TourgidUITests.release.xcconfig */,
+			);
+			name = "Pods-Tourgid-TourgidUITests";
+			path = "Target Support Files/Pods-Tourgid-TourgidUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DA8033AB6CA841280EDBA45B0516EC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0649F44D798F4E6252D2BAF82940FA9D /* Pods-TourgidTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C23DAB5E6751A710B6C25F084F81BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEF6BDABBFD2CAD08EB582ED3FA3A15 /* Pods-Tourgid-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAE791E2A5765BC1E8DD2FEC995A030 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04A3D2DF4F57854F51681C1B6657A30 /* Pods-Tourgid-TourgidUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		66107F9FCD76BD85851B6F5C8C030B47 /* Pods-Tourgid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA03625788D17BA1ED2CF4FD6B38BB02 /* Build configuration list for PBXNativeTarget "Pods-Tourgid" */;
+			buildPhases = (
+				29C23DAB5E6751A710B6C25F084F81BF /* Headers */,
+				5C263D1EDA0CCA9C5143140173E67013 /* Sources */,
+				20A9FCFA59D31932CB831C654AC0ACD0 /* Frameworks */,
+				66BF010EE65233977DBECEE33006FF3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD59E3841B2449035E531BFF1526536 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tourgid";
+			productName = "Pods-Tourgid";
+			productReference = C1A01C14A7989ECA604E00E39A2C99E7 /* Pods_Tourgid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D621C8930F063D6EA165AC8C0AEB206C /* Pods-TourgidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7D1F1E91945551FB92AB120824B197 /* Build configuration list for PBXNativeTarget "Pods-TourgidTests" */;
+			buildPhases = (
+				1DA8033AB6CA841280EDBA45B0516EC9 /* Headers */,
+				548D57D28796D52335E0F13D6141629D /* Sources */,
+				F3631EF04D6CFE96BA55F21B0EBD059B /* Frameworks */,
+				23694E5F0E8DCD64C3A64E36E6F9E29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FC8CF7A48AEC86896BD3B12390793CF /* PBXTargetDependency */,
+			);
+			name = "Pods-TourgidTests";
+			productName = "Pods-TourgidTests";
+			productReference = 77B6BFFE3811D93D4DF440D1C5CFCD07 /* Pods_TourgidTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D74A9CE1B116D4CF7B79F529B2DE74B2 /* Pods-Tourgid-TourgidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5448FA938691D958BD0D752EADF18A08 /* Build configuration list for PBXNativeTarget "Pods-Tourgid-TourgidUITests" */;
+			buildPhases = (
+				5BAE791E2A5765BC1E8DD2FEC995A030 /* Headers */,
+				F6BA6EDC2C7052871A42B552DB19A837 /* Sources */,
+				53F755943BCD20570767225676344B79 /* Frameworks */,
+				4D7F285621AB63E05BA7D1D4A551C7B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				946603E135C9FD3248CB664303A9AD7D /* PBXTargetDependency */,
+			);
+			name = "Pods-Tourgid-TourgidUITests";
+			productName = "Pods-Tourgid-TourgidUITests";
+			productReference = 5C2C02D29AE3C3FC25DDEDC170E78E07 /* Pods_Tourgid_TourgidUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 10DE5F934561281275ACAE8BD857D1F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				66107F9FCD76BD85851B6F5C8C030B47 /* Pods-Tourgid */,
+				D74A9CE1B116D4CF7B79F529B2DE74B2 /* Pods-Tourgid-TourgidUITests */,
+				D621C8930F063D6EA165AC8C0AEB206C /* Pods-TourgidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23694E5F0E8DCD64C3A64E36E6F9E29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7F285621AB63E05BA7D1D4A551C7B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BF010EE65233977DBECEE33006FF3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		548D57D28796D52335E0F13D6141629D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9955AA347A2DEF3286C6D21D21D04813 /* Pods-TourgidTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C263D1EDA0CCA9C5143140173E67013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30776A213AFB7E0F1530C59B998D278D /* Pods-Tourgid-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BA6EDC2C7052871A42B552DB19A837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FB2004116DE7943F2CF731957C192 /* Pods-Tourgid-TourgidUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FC8CF7A48AEC86896BD3B12390793CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tourgid";
+			target = 66107F9FCD76BD85851B6F5C8C030B47 /* Pods-Tourgid */;
+			targetProxy = 902A6F2B0C5E6DF3F88920E24AAC93C8 /* PBXContainerItemProxy */;
+		};
+		946603E135C9FD3248CB664303A9AD7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 27273B1C360E979322080404B17B8F7B /* PBXContainerItemProxy */;
+		};
+		FDD59E3841B2449035E531BFF1526536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = BF0334E0ACA61842517A8015F7B3A10D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002A08A0B19379DC746E4792C523E177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B64AAB578A0888243347149661194D5 /* Pods-Tourgid-TourgidUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D5FB5D6D0E8C1FB8C2407509220BD02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C59CF8F7BA697243AB801DCC35609DE /* Pods-Tourgid.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tourgid/Pods-Tourgid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tourgid/Pods-Tourgid.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		100A80BC3D1EAA0C8E17D7F4F981A7FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DB51A9D2BE913D6FE315CCD3A40CFE /* Pods-TourgidTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		540B9D6B74E200C78393012EF8A58F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B68F239524CA60C69043E19B2C91A5 /* Pods-Tourgid.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tourgid/Pods-Tourgid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tourgid/Pods-Tourgid.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		835AF6412A9FCAF27592C3B28FCDF86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E629B8EEB71C47DCF71AE7D17AA881 /* Pods-Tourgid-TourgidUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAA4FB2236783EA11A4BFD3A0F823B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C48868A5B97CFBF2F650DE908422E5B /* Pods-TourgidTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7D1F1E91945551FB92AB120824B197 /* Build configuration list for PBXNativeTarget "Pods-TourgidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA4FB2236783EA11A4BFD3A0F823B8D /* Debug */,
+				100A80BC3D1EAA0C8E17D7F4F981A7FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5448FA938691D958BD0D752EADF18A08 /* Build configuration list for PBXNativeTarget "Pods-Tourgid-TourgidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002A08A0B19379DC746E4792C523E177 /* Debug */,
+				835AF6412A9FCAF27592C3B28FCDF86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA03625788D17BA1ED2CF4FD6B38BB02 /* Build configuration list for PBXNativeTarget "Pods-Tourgid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5FB5D6D0E8C1FB8C2407509220BD02 /* Debug */,
+				540B9D6B74E200C78393012EF8A58F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

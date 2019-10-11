@@ -1,0 +1,6 @@
+framework module Pods_TourgidTests {
+  umbrella header "Pods-TourgidTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
