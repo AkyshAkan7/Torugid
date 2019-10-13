@@ -1,2 +1,2 @@
-# Torugid
+# Tourgid
 TourGid project
