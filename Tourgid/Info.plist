@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This is why we need your location</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -38,6 +36,8 @@
 		<string>MKDirectionsModeCar</string>
 		<string>MKDirectionsModeOther</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This is why we need your location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -68,8 +68,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

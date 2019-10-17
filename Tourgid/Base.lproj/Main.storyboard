@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,29 +12,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Tourgid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QbK-Ox-DSD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l86-74-HNx" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="bwu-tb-naY">
+                                <rect key="frame" x="20" y="44" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rtr-TR-syb"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QbK-Ox-DSD" secondAttribute="trailing" id="NFW-sP-3X5"/>
-                            <constraint firstItem="QbK-Ox-DSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RdY-Kj-7eE"/>
-                            <constraint firstItem="QbK-Ox-DSD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dOw-ZA-Yw5"/>
-                            <constraint firstAttribute="bottom" secondItem="QbK-Ox-DSD" secondAttribute="bottom" id="oeC-jV-1Ok"/>
+                            <constraint firstItem="l86-74-HNx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7C8-Z4-PDK"/>
+                            <constraint firstItem="bwu-tb-naY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NJP-GX-Y8y"/>
+                            <constraint firstItem="l86-74-HNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NO2-m6-VfC"/>
+                            <constraint firstAttribute="bottom" secondItem="l86-74-HNx" secondAttribute="bottom" id="WHf-Ke-6cW"/>
+                            <constraint firstItem="bwu-tb-naY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dQK-BF-8dI"/>
+                            <constraint firstItem="bwu-tb-naY" firstAttribute="centerX" secondItem="l86-74-HNx" secondAttribute="centerX" id="sc0-jV-dVO"/>
+                            <constraint firstItem="l86-74-HNx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vDo-c9-fgP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="QbK-Ox-DSD" id="EXP-EJ-tBL"/>
+                        <outlet property="mapView" destination="l86-74-HNx" id="u0f-vw-YYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134.78260869565219" y="123.88392857142857"/>
+            <point key="canvasLocation" x="128.98550724637681" y="121.875"/>
         </scene>
     </scenes>
 </document>

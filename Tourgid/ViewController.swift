@@ -12,25 +12,51 @@ import GoogleMaps
 
 class MapViewController: UIViewController {
 
-    @IBOutlet weak var mapView: MKMapView!
+    
+    @IBOutlet weak var mapView: GMSMapView!
     
     private let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.overrideUserInterfaceStyle = .light
         
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        mapView.isMyLocationEnabled = true
         
+        let markerALocation = CLLocationCoordinate2DMake(43.157410, 77.058953)
+        let markerA = GMSMarker(position: markerALocation)
+        markerA.title = "Спортивный Комплекс МЕДЕУ"
+        markerA.map = mapView
+        
+        let markerBLocation = CLLocationCoordinate2DMake(43.050510, 76.985011)
+        let markerB = GMSMarker(position: markerBLocation)
+        markerB.title = "Большое Алматинское озеро"
+        markerB.map = mapView
+        
+        let markerCLocation = CLLocationCoordinate2DMake(43.162839, 77.048591)
+        let markerC = GMSMarker(position: markerCLocation)
+        markerC.title = "Shymbylak Mountain resort"
+        markerC.map = mapView
+        
+        let markerDLocation = CLLocationCoordinate2DMake(43.129805, 76.905049)
+        let markerD = GMSMarker(position: markerDLocation)
+        markerD.title = "Кок-Тюбе"
+        markerD.map = mapView
     }
     
-    override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: 43.235299, longitude: 76.909867, zoom: 13)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
+}
+
+// MARK: - CLLocationManagerDelegate
+extension MapViewController: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locationManager.location?.coordinate
         
-        let UniversityLocation = CLLocationCoordinate2DMake(43.235299, 76.909867)
-        let marker = GMSMarker(position: UniversityLocation)
-        marker.title = "IITU University"
-        marker.map = mapView
+        if let location = location {
+            mapView.camera = GMSCameraPosition.camera(withTarget: location, zoom: 13)
+        }
     }
-    
 }
