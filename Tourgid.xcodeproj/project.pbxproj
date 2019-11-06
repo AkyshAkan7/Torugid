@@ -18,6 +18,7 @@
 		CE9A114E233DA7D9006860BF /* TourgidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A114D233DA7D9006860BF /* TourgidTests.swift */; };
 		CE9A1159233DA7D9006860BF /* TourgidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1158233DA7D9006860BF /* TourgidUITests.swift */; };
 		CE9A1168233DB500006860BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A1167233DB500006860BF /* MapKit.framework */; };
+		CE9AFD212371D5850018A1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9AFD202371D5850018A1B4 /* GoogleService-Info.plist */; };
 		E771C96F395D24D3A318D8C9 /* Pods_TourgidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A12C0F6DF79D4AE36D1EC1 /* Pods_TourgidTests.framework */; };
 		F1A462C3B4AAD1AC42F287FD /* Pods_Tourgid_TourgidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFB37AB18E3395B2E5DCE07 /* Pods_Tourgid_TourgidUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		CE9A1158233DA7D9006860BF /* TourgidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourgidUITests.swift; sourceTree = "<group>"; };
 		CE9A115A233DA7D9006860BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9A1167233DB500006860BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE9AFD202371D5850018A1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8522599B4CC45223DAB28E1 /* Pods-Tourgid-TourgidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid-TourgidUITests.release.xcconfig"; path = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				CE9A1141233DA7D9006860BF /* LaunchScreen.storyboard */,
 				CE9A1144233DA7D9006860BF /* Info.plist */,
 				CE9A113C233DA7D8006860BF /* Tourgid.xcdatamodeld */,
+				CE9AFD202371D5850018A1B4 /* GoogleService-Info.plist */,
 			);
 			path = Tourgid;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				CE9A112D233DA7D8006860BF /* Frameworks */,
 				CE9A112E233DA7D8006860BF /* Resources */,
 				0B089581C90DE7BA1DE150CF /* [CP] Copy Pods Resources */,
+				115E65B708043ACB2D6BCCA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +229,7 @@
 				CE9A1151233DA7D9006860BF /* Frameworks */,
 				CE9A1152233DA7D9006860BF /* Resources */,
 				E643325095FBAB2A35F9B5CE /* [CP] Copy Pods Resources */,
+				40897AA936BDDD239BDCF4D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9A1143233DA7D9006860BF /* LaunchScreen.storyboard in Resources */,
+				CE9AFD212371D5850018A1B4 /* GoogleService-Info.plist in Resources */,
 				CE9A1140233DA7D9006860BF /* Assets.xcassets in Resources */,
 				CE9A113B233DA7D8006860BF /* Main.storyboard in Resources */,
 			);
@@ -322,6 +328,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		115E65B708043ACB2D6BCCA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40897AA936BDDD239BDCF4D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C705A6985724CD34AC25F4C /* [CP] Check Pods Manifest.lock */ = {

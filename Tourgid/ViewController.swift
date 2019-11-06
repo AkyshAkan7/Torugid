@@ -20,7 +20,6 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.overrideUserInterfaceStyle = .light
         
         let location = locationManager.location?.coordinate
 

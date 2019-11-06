@@ -5,7 +5,11 @@ target 'Tourgid' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'GoogleMaps'
-
+  pod 'Firebase/Analytics'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Facebook'
+  
   # Pods for Tourgid
 
   target 'TourgidTests' do
