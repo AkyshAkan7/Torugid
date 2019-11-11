@@ -6,9 +6,12 @@ target 'Tourgid' do
   use_frameworks!
   pod 'GoogleMaps'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Google'
   pod 'FirebaseUI/Facebook'
+
   
   # Pods for Tourgid
 
