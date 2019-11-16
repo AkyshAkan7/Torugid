@@ -10,16 +10,36 @@ import UIKit
 import FirebaseAuth
 
 class ProfileViewController: UIViewController {
-
+    
+    @IBOutlet weak var signOutLabel: UIButton!
+    @IBOutlet weak var loginLabel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                self.signOutLabel.isHidden = false
+                self.loginLabel.isHidden = true
+            } else {
+                self.signOutLabel.isHidden = true
+                self.loginLabel.isHidden = false
+            }
+        }
     }
     
     @IBAction func signOutTapped(_ sender: Any) {
         try! Auth.auth().signOut()
     }
+    
+    
+    @IBAction func loginTapped(_ sender: Any) {
+        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        
+        view.window?.rootViewController = loginViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     
     /*
     // MARK: - Navigation
