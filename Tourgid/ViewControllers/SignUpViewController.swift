@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import FirebaseFirestore
-import FirebaseAuth
+
 
 class SignUpViewController: UIViewController {
     
@@ -16,27 +15,75 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var passwordWarningLabel: UILabel!
+    
+    @IBOutlet weak var firstNameBottomLine: UIView!
+    @IBOutlet weak var lastNameBottomLine: UIView!
+    @IBOutlet weak var emailBottomLine: UIView!
+    @IBOutlet weak var passwordBottomLine: UIView!
+    
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var showHideButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    var passwordIsHidden: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupElements()
+        setupView()
+        
     }
     
-    func setupElements() {
-        // Hide the error label
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        firstNameTextField.becomeFirstResponder()
+    }
+    
+    func setupView() {
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+        firstNameTextField.returnKeyType = .next
+        lastNameTextField.returnKeyType = .next
+        emailTextField.returnKeyType = .next
+        passwordTextField.returnKeyType = .done
+        
+        firstNameLabel.isHidden = true
+        lastNameLabel.isHidden = true
+        emailLabel.isHidden = true
+        passwordLabel.isHidden = true
+        passwordWarningLabel.isHidden = true
+        
         errorLabel.alpha = 0
         
-        // Style the elements
-        Utilities.styleTextField(firstNameTextField)
-        Utilities.styleTextField(lastNameTextField)
-        Utilities.styleTextField(emailTextField)
-        Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(signUpButton)
+        Utilities.styleButton(signUpButton)
     }
+    
+    @IBAction func showHideButtonTapped(_ sender: Any) {
+        if passwordIsHidden {
+            passwordIsHidden = false
+            passwordTextField.isSecureTextEntry = false
+            
+            let image = UIImage(named: "closedEye")
+            showHideButton.setImage(image, for: .normal)
+        } else {
+            passwordIsHidden = true
+            passwordTextField.isSecureTextEntry = true
+            
+            let image = UIImage(named: "eye")
+            showHideButton.setImage(image, for: .normal)
+        }
+    }
+    
 
     @IBAction func signUpTapped(_ sender: Any) {
         
@@ -46,30 +93,7 @@ class SignUpViewController: UIViewController {
         if error != nil {
             showError(error!)
         } else {
-            
-            // Create cleaned version of the data
-            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let password = passwordTextField.text! .trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            // Create the user
-            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                
-                if error != nil {
-                    self.showError("Error while creating a user")
-                } else {
-                    let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["email": email, "firstname": firstName, "lastname": lastName, "uid": result!.user.uid]) { (error) in
-                        if error != nil {
-                            self.showError("Error saving user data")
-                        }
-                    }
-                    
-                    // Transition to the home screen
-                    self.transitionToHome()
-                }
-            }
+            performSegue(withIdentifier: "goToAvatarPickerVC", sender: nil)
         }
     }
     
@@ -87,7 +111,7 @@ class SignUpViewController: UIViewController {
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
             // password isn't secure enough
-            return "Please make sure your password is at least 8 characters, contains a special character and number"
+            return "Please make sure your password is at least 6 character long, contain 1 letter and 1 number"
         }
         
         return nil
@@ -98,11 +122,109 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
-    func transitionToHome() {
-        let tabBarController = storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
-        tabBarController.selectedViewController = tabBarController.viewControllers![2]
-        
-        view.window?.rootViewController = tabBarController
-        view.window?.makeKeyAndVisible()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAvatarPickerVC" {
+            
+            // Create cleaned version of the data
+            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let viewController = segue.destination as! AvatarPickerViewController
+            
+            viewController.firstName = firstName
+            viewController.lastName = lastName
+            viewController.email = email
+            viewController.password = password
+        }
+    }
+    
+}
+
+// MARK: - text field delegate
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == firstNameTextField {
+            textField.resignFirstResponder()
+            lastNameTextField.becomeFirstResponder()
+            return true
+        } else if textField == lastNameTextField {
+            textField.resignFirstResponder()
+            emailTextField.becomeFirstResponder()
+            return true
+        } else if textField == emailTextField {
+            textField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+            return true
+        } else if textField == passwordTextField {
+            textField.resignFirstResponder()
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == firstNameTextField {
+            firstNameLabel.isHidden = false
+            firstNameLabel.textColor = .systemBlue
+            firstNameBottomLine.backgroundColor = .systemBlue
+        } else if textField == lastNameTextField {
+            lastNameLabel.isHidden = false
+            lastNameLabel.textColor = .systemBlue
+            lastNameBottomLine.backgroundColor = .systemBlue
+        } else if textField == emailTextField {
+            emailLabel.isHidden = false
+            emailLabel.textColor = .systemBlue
+            emailBottomLine.backgroundColor = .systemBlue
+        } else if textField == passwordTextField {
+            passwordLabel.isHidden = false
+            passwordWarningLabel.isHidden = false
+            passwordLabel.textColor = .systemBlue
+            passwordBottomLine.backgroundColor = .systemBlue
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == firstNameTextField {
+            firstNameLabel.textColor = .black
+            firstNameBottomLine.backgroundColor = .black
+            
+            if firstNameTextField.text!.isEmpty {
+                firstNameLabel.textColor = .lightGray
+                firstNameBottomLine.backgroundColor = .lightGray
+            }
+            
+        } else if textField == lastNameTextField {
+            lastNameLabel.textColor = .black
+            lastNameBottomLine.backgroundColor = .black
+            
+            if firstNameTextField.text!.isEmpty {
+                lastNameLabel.textColor = .lightGray
+                lastNameBottomLine.backgroundColor = .lightGray
+            }
+            
+        } else if textField == emailTextField {
+            emailLabel.textColor = .black
+            emailBottomLine.backgroundColor = .black
+            
+            if emailTextField.text!.isEmpty {
+                emailLabel.textColor = .lightGray
+                emailBottomLine.backgroundColor = .lightGray
+            }
+            
+        } else if textField == passwordTextField {
+            passwordLabel.textColor = .black
+            passwordBottomLine.backgroundColor = .black
+            
+            if passwordTextField.text!.isEmpty {
+                passwordLabel.textColor = .lightGray
+                passwordBottomLine.backgroundColor = .lightGray
+                passwordWarningLabel.isHidden = true
+            }
+            
+        }
     }
 }

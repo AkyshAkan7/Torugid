@@ -93,6 +93,7 @@ class MapViewController: UIViewController {
 }
 
 // MARK: - CLLocationManagerDelegate
+
 extension MapViewController: CLLocationManagerDelegate, GMSMapViewDelegate {
 
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

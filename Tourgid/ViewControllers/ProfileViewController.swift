@@ -34,10 +34,12 @@ class ProfileViewController: UIViewController {
     
     
     @IBAction func loginTapped(_ sender: Any) {
-        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        
-        view.window?.rootViewController = loginViewController
-        view.window?.makeKeyAndVisible()
+//        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "EntryViewController") as! EntryViewController
+//        
+//        let navigationController = UINavigationController(rootViewController: loginViewController)
+//        
+//        view.window?.rootViewController = navigationController
+//        view.window?.makeKeyAndVisible()
     }
     
     

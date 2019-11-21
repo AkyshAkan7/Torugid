@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F877228A0C1FEB041C5D49F /* Pods_Tourgid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776EB716F98D4678813BF9AA /* Pods_Tourgid.framework */; };
+		CE1A4D0E2380839500E49778 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A4D0D2380839500E49778 /* EntryViewController.swift */; };
+		CE1A4D102381651800E49778 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */; };
 		CE9A1134233DA7D8006860BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1133233DA7D8006860BF /* AppDelegate.swift */; };
 		CE9A1136233DA7D8006860BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1135233DA7D8006860BF /* SceneDelegate.swift */; };
 		CE9A1138233DA7D8006860BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1137233DA7D8006860BF /* MapViewController.swift */; };
@@ -55,6 +57,8 @@
 		B4AE281189E6092B626F270B /* Pods-Tourgid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid.debug.xcconfig"; path = "Target Support Files/Pods-Tourgid/Pods-Tourgid.debug.xcconfig"; sourceTree = "<group>"; };
 		BEFB37AB18E3395B2E5DCE07 /* Pods_Tourgid_TourgidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourgid_TourgidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCB91A5E72C21CF0068675A /* Pods-TourgidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourgidTests.release.xcconfig"; path = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE1A4D0D2380839500E49778 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		CE9A1130233DA7D8006860BF /* Tourgid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourgid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A1133233DA7D8006860BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A1135233DA7D8006860BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 				CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */,
 				CEB9557F23768E7F00FDB138 /* MainTabBarController.swift */,
 				CEAC46612379583A006A5C8E /* ProfileViewController.swift */,
+				CE1A4D0D2380839500E49778 /* EntryViewController.swift */,
+				CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -490,7 +496,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED6DD522373EAD3000825F5 /* LoginViewController.swift in Sources */,
+				CE1A4D0E2380839500E49778 /* EntryViewController.swift in Sources */,
 				CE9A1138233DA7D8006860BF /* MapViewController.swift in Sources */,
+				CE1A4D102381651800E49778 /* AvatarPickerViewController.swift in Sources */,
 				CEAC46622379583A006A5C8E /* ProfileViewController.swift in Sources */,
 				CEB9558023768E7F00FDB138 /* MainTabBarController.swift in Sources */,
 				CE9A1134233DA7D8006860BF /* AppDelegate.swift in Sources */,

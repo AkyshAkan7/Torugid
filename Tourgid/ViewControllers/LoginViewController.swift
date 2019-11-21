@@ -13,25 +13,62 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    
+    @IBOutlet weak var emailBottomLine: UIView!
+    @IBOutlet weak var passwordBottomLine: UIView!
+    
+    @IBOutlet weak var showHideButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    var passwordIsHidden: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupElements()
+        
+        setupView()
     }
     
-    func setupElements() {
-        // Hide the error label
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        emailTextField.becomeFirstResponder()
+    }
+    
+    func setupView() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+        emailTextField.returnKeyType = .next
+        passwordTextField.returnKeyType = .done
+        
+        emailLabel.isHidden = true
+        passwordLabel.isHidden = true
+        
         errorLabel.alpha = 0
         
-        // style the elements
-        Utilities.styleTextField(emailTextField)
-        Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(loginButton)
+        Utilities.styleButton(loginButton)
     }
+    
+    @IBAction func showHideButtonPressed(_ sender: Any) {
+        if passwordIsHidden {
+            passwordIsHidden = false
+            passwordTextField.isSecureTextEntry = false
+            
+            let image = UIImage(named: "closedEye")
+            showHideButton.setImage(image, for: .normal)
+        } else {
+            passwordIsHidden = true
+            passwordTextField.isSecureTextEntry = true
+            
+            let image = UIImage(named: "eye")
+            showHideButton.setImage(image, for: .normal)
+        }
+    }
+    
     
     @IBAction func loginTapped(_ sender: Any) {
         
@@ -49,7 +86,7 @@ class LoginViewController: UIViewController {
                 if error != nil {
                     self.showError(error!.localizedDescription)
                 } else {
-                    self.transitionToHome()
+                    self.dismiss(animated: true, completion: nil)
                 }
             }
         }
@@ -70,14 +107,58 @@ class LoginViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
     }
-    
-    func transitionToHome() {
-        let tabBarController = storyboard?.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
-        tabBarController.selectedViewController = tabBarController.viewControllers![2]
-        
-        view.window?.rootViewController = tabBarController
-        view.window?.makeKeyAndVisible()
-        
-    }
 
+}
+
+//MARK: - text field delegate
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            textField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+            return true
+        } else if textField == passwordTextField {
+            textField.resignFirstResponder()
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == emailTextField {
+            emailLabel.isHidden = false
+            emailLabel.textColor = .systemBlue
+            emailBottomLine.backgroundColor = .systemBlue
+        } else if textField == passwordTextField {
+            passwordLabel.isHidden = false
+            passwordLabel.textColor = .systemBlue
+            passwordBottomLine.backgroundColor = .systemBlue
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == emailTextField {
+            emailLabel.textColor = .black
+            emailBottomLine.backgroundColor = .black
+            
+            if emailTextField.text!.isEmpty {
+                emailLabel.textColor = .lightGray
+                emailBottomLine.backgroundColor = .lightGray
+            }
+            
+        } else if textField == passwordTextField {
+            passwordLabel.textColor = .black
+            passwordBottomLine.backgroundColor = .black
+            
+            if passwordTextField.text!.isEmpty {
+                passwordLabel.textColor = .lightGray
+                passwordBottomLine.backgroundColor = .lightGray
+            }
+            
+        }
+    }
+    
 }
