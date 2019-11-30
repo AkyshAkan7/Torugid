@@ -1,6 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources.sh
 ${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle
 ${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle
-${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle

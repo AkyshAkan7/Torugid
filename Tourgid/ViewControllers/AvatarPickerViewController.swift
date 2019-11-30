@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
+import MBProgressHUD
 
 class AvatarPickerViewController: UIViewController {
     
@@ -36,6 +37,11 @@ class AvatarPickerViewController: UIViewController {
     
     @IBAction func signUpButtonTapped(_ sender: Any) {
         
+        let activityindicator = MBProgressHUD.showAdded(to: view, animated: true)
+        activityindicator.label.text = "Sign up..."
+        activityindicator.backgroundView.color = .lightGray
+        activityindicator.backgroundView.alpha = 0.5
+        
         guard let fname = firstName else { return }
         guard let lname = lastName else { return }
         guard let mail = email else { return }
@@ -46,6 +52,7 @@ class AvatarPickerViewController: UIViewController {
             
             if error != nil {
                 print(error!.localizedDescription)
+                activityindicator.hide(animated: true)
             } else {
                 
                 // Upload the profile image to Firebase storage
@@ -55,20 +62,24 @@ class AvatarPickerViewController: UIViewController {
                         
                         // Save user data to database
                         let db = Firestore.firestore()
-                        db.collection("users").addDocument(data: ["firstname": fname,
-                                                                  "lastname": lname,
-                                                                  "email": mail,
-                                                                  "profileImageURL": url!.absoluteString,
-                                                                  "uid": result!.user.uid]) { (error) in
+                        db.collection("users").document("\(result!.user.uid)").setData([
+                            "firstname": fname,
+                            "lastname": lname,
+                            "email": mail,
+                            "profileImageUrl": url!.absoluteString
+                        ]) { (error) in
                                                                     
                             if error != nil {
+                                activityindicator.hide(animated: true)
                                 print(error!.localizedDescription)
-                            } else {
+                            } else {                                
+                                activityindicator.hide(animated: true)
                                 self.dismiss(animated: true, completion: nil)
                             }
                         }
                         
                     } else {
+                        activityindicator.hide(animated: true)
                         print("Error while uploading profile image")
                     }
                     
@@ -80,7 +91,7 @@ class AvatarPickerViewController: UIViewController {
     }
     
     func uploadProfileImage(_ image: UIImage, completion: @escaping (_ url:URL?)->() ){
-        guard let uid = Auth.auth().currentUser else { return }
+        guard let uid = Auth.auth().currentUser?.uid else { return }
         let storageRef = Storage.storage().reference().child("userProfileImages/\(uid)")
         
         guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
@@ -107,6 +118,7 @@ class AvatarPickerViewController: UIViewController {
     
     func setupView() {
         Utilities.styleButton(signupButton)
+        profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
         
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
@@ -116,7 +128,6 @@ class AvatarPickerViewController: UIViewController {
         profileImageView.isUserInteractionEnabled = true
         profileImageView.addGestureRecognizer(imageTap)
         profileImageView.clipsToBounds = true
-        profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
         
         addProfileImageButton.addTarget(self, action: #selector(chooseImage), for: .touchUpInside)
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import MBProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -37,6 +38,11 @@ class LoginViewController: UIViewController {
         
         emailTextField.becomeFirstResponder()
     }
+    
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     func setupView() {
         emailTextField.delegate = self
@@ -78,14 +84,21 @@ class LoginViewController: UIViewController {
         if error != nil {
             self.showError(error!)
         } else {
+            let activityIndicator = MBProgressHUD.showAdded(to: view, animated: true)
+            activityIndicator.label.text = "Login..."
+            activityIndicator.backgroundView.color = .lightGray
+            activityIndicator.backgroundView.alpha = 0.5
+            
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
 
                 if error != nil {
+                    activityIndicator.hide(animated: true)
                     self.showError(error!.localizedDescription)
                 } else {
+                    activityIndicator.hide(animated: true)
                     self.dismiss(animated: true, completion: nil)
                 }
             }

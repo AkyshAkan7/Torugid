@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F877228A0C1FEB041C5D49F /* Pods_Tourgid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776EB716F98D4678813BF9AA /* Pods_Tourgid.framework */; };
+		06BDD74481C14AE78064E208 /* Pods_Tourgid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DE797DC20BF6F108F2CAFA /* Pods_Tourgid.framework */; };
+		08F58506A24B2E53573699D1 /* Pods_Tourgid_TourgidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233717BD67B4B7DD523A407F /* Pods_Tourgid_TourgidUITests.framework */; };
+		789403BE8347FB200C454510 /* Pods_TourgidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200C52BF82E9A40008A254DD /* Pods_TourgidTests.framework */; };
 		CE1A4D0E2380839500E49778 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A4D0D2380839500E49778 /* EntryViewController.swift */; };
 		CE1A4D102381651800E49778 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */; };
+		CE442BD0238E30FA00E6EC79 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE442BCF238E30FA00E6EC79 /* UserProfile.swift */; };
+		CE442BD3238FD9E400E6EC79 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE442BD2238FD9E400E6EC79 /* ImageService.swift */; };
 		CE9A1134233DA7D8006860BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1133233DA7D8006860BF /* AppDelegate.swift */; };
 		CE9A1136233DA7D8006860BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1135233DA7D8006860BF /* SceneDelegate.swift */; };
 		CE9A1138233DA7D8006860BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1137233DA7D8006860BF /* MapViewController.swift */; };
@@ -27,8 +31,7 @@
 		CED6DD4E2373E7AF000825F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */; };
 		CED6DD522373EAD3000825F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DD512373EAD3000825F5 /* LoginViewController.swift */; };
 		CED6DD562373F57F000825F5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DD552373F57F000825F5 /* Utilities.swift */; };
-		E771C96F395D24D3A318D8C9 /* Pods_TourgidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A12C0F6DF79D4AE36D1EC1 /* Pods_TourgidTests.framework */; };
-		F1A462C3B4AAD1AC42F287FD /* Pods_Tourgid_TourgidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFB37AB18E3395B2E5DCE07 /* Pods_Tourgid_TourgidUITests.framework */; };
+		CEFCD548238CC0B5007A3F64 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD547238CC0B5007A3F64 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,16 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		315EE862CBA066EFFB83F4BD /* Pods-Tourgid-TourgidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid-TourgidUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6574D112AE32696564EFBA83 /* Pods-TourgidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourgidTests.debug.xcconfig"; path = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.debug.xcconfig"; sourceTree = "<group>"; };
-		776EB716F98D4678813BF9AA /* Pods_Tourgid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourgid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A544D27C2C0C6B144F2A0779 /* Pods-Tourgid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid.release.xcconfig"; path = "Target Support Files/Pods-Tourgid/Pods-Tourgid.release.xcconfig"; sourceTree = "<group>"; };
-		B1A12C0F6DF79D4AE36D1EC1 /* Pods_TourgidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourgidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4AE281189E6092B626F270B /* Pods-Tourgid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid.debug.xcconfig"; path = "Target Support Files/Pods-Tourgid/Pods-Tourgid.debug.xcconfig"; sourceTree = "<group>"; };
-		BEFB37AB18E3395B2E5DCE07 /* Pods_Tourgid_TourgidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourgid_TourgidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCB91A5E72C21CF0068675A /* Pods-TourgidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourgidTests.release.xcconfig"; path = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.release.xcconfig"; sourceTree = "<group>"; };
+		200C52BF82E9A40008A254DD /* Pods_TourgidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourgidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		233717BD67B4B7DD523A407F /* Pods_Tourgid_TourgidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourgid_TourgidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3EA1AD8C88E712A87C7D42 /* Pods-Tourgid-TourgidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid-TourgidUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		57A1AB8BDCA93DD6D0B5BAD9 /* Pods-TourgidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourgidTests.debug.xcconfig"; path = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		786B863D0527E348A4B75B04 /* Pods-TourgidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourgidTests.release.xcconfig"; path = "Target Support Files/Pods-TourgidTests/Pods-TourgidTests.release.xcconfig"; sourceTree = "<group>"; };
+		95DE797DC20BF6F108F2CAFA /* Pods_Tourgid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tourgid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A3A4A95562BBFD08B404A3 /* Pods-Tourgid-TourgidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid-TourgidUITests.release.xcconfig"; path = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CCC0F7AF5859AB5055667D16 /* Pods-Tourgid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid.debug.xcconfig"; path = "Target Support Files/Pods-Tourgid/Pods-Tourgid.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1A4D0D2380839500E49778 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
+		CE442BCF238E30FA00E6EC79 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		CE442BD2238FD9E400E6EC79 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		CE9A1130233DA7D8006860BF /* Tourgid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourgid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A1133233DA7D8006860BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A1135233DA7D8006860BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +87,8 @@
 		CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CED6DD512373EAD3000825F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED6DD552373F57F000825F5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		F8522599B4CC45223DAB28E1 /* Pods-Tourgid-TourgidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid-TourgidUITests.release.xcconfig"; path = "Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEFCD547238CC0B5007A3F64 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EA8BE44EFCD5023E9BD1B22B /* Pods-Tourgid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid.release.xcconfig"; path = "Target Support Files/Pods-Tourgid/Pods-Tourgid.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9A1168233DB500006860BF /* MapKit.framework in Frameworks */,
-				4F877228A0C1FEB041C5D49F /* Pods_Tourgid.framework in Frameworks */,
+				06BDD74481C14AE78064E208 /* Pods_Tourgid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E771C96F395D24D3A318D8C9 /* Pods_TourgidTests.framework in Frameworks */,
+				789403BE8347FB200C454510 /* Pods_TourgidTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1A462C3B4AAD1AC42F287FD /* Pods_Tourgid_TourgidUITests.framework in Frameworks */,
+				08F58506A24B2E53573699D1 /* Pods_Tourgid_TourgidUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,14 +123,31 @@
 		0A85927097B8D7C03E41A51E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B4AE281189E6092B626F270B /* Pods-Tourgid.debug.xcconfig */,
-				A544D27C2C0C6B144F2A0779 /* Pods-Tourgid.release.xcconfig */,
-				315EE862CBA066EFFB83F4BD /* Pods-Tourgid-TourgidUITests.debug.xcconfig */,
-				F8522599B4CC45223DAB28E1 /* Pods-Tourgid-TourgidUITests.release.xcconfig */,
-				6574D112AE32696564EFBA83 /* Pods-TourgidTests.debug.xcconfig */,
-				CBCB91A5E72C21CF0068675A /* Pods-TourgidTests.release.xcconfig */,
+				CCC0F7AF5859AB5055667D16 /* Pods-Tourgid.debug.xcconfig */,
+				EA8BE44EFCD5023E9BD1B22B /* Pods-Tourgid.release.xcconfig */,
+				2C3EA1AD8C88E712A87C7D42 /* Pods-Tourgid-TourgidUITests.debug.xcconfig */,
+				C8A3A4A95562BBFD08B404A3 /* Pods-Tourgid-TourgidUITests.release.xcconfig */,
+				57A1AB8BDCA93DD6D0B5BAD9 /* Pods-TourgidTests.debug.xcconfig */,
+				786B863D0527E348A4B75B04 /* Pods-TourgidTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE442BCE238E30D600E6EC79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE442BCF238E30FA00E6EC79 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE442BD1238FD95B00E6EC79 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A1139233DA7D8006860BF /* Main.storyboard */,
+				CE9A1141233DA7D9006860BF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		CE9A1127233DA7D8006860BF = {
@@ -154,10 +177,10 @@
 			children = (
 				CE9A1133233DA7D8006860BF /* AppDelegate.swift */,
 				CE9A1135233DA7D8006860BF /* SceneDelegate.swift */,
+				CE442BCE238E30D600E6EC79 /* Models */,
 				CED6DD582373F668000825F5 /* Helpers */,
 				CED6DD572373F65B000825F5 /* ViewControllers */,
-				CE9A1139233DA7D8006860BF /* Main.storyboard */,
-				CE9A1141233DA7D9006860BF /* LaunchScreen.storyboard */,
+				CE442BD1238FD95B00E6EC79 /* Storyboards */,
 				CE9A113F233DA7D9006860BF /* Assets.xcassets */,
 				CE9A1144233DA7D9006860BF /* Info.plist */,
 				CE9A113C233DA7D8006860BF /* Tourgid.xcdatamodeld */,
@@ -189,9 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				CE9A1167233DB500006860BF /* MapKit.framework */,
-				776EB716F98D4678813BF9AA /* Pods_Tourgid.framework */,
-				BEFB37AB18E3395B2E5DCE07 /* Pods_Tourgid_TourgidUITests.framework */,
-				B1A12C0F6DF79D4AE36D1EC1 /* Pods_TourgidTests.framework */,
+				95DE797DC20BF6F108F2CAFA /* Pods_Tourgid.framework */,
+				233717BD67B4B7DD523A407F /* Pods_Tourgid_TourgidUITests.framework */,
+				200C52BF82E9A40008A254DD /* Pods_TourgidTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,10 +225,10 @@
 				CE9A1137233DA7D8006860BF /* MapViewController.swift */,
 				CED6DD512373EAD3000825F5 /* LoginViewController.swift */,
 				CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */,
-				CEB9557F23768E7F00FDB138 /* MainTabBarController.swift */,
+				CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */,
 				CEAC46612379583A006A5C8E /* ProfileViewController.swift */,
 				CE1A4D0D2380839500E49778 /* EntryViewController.swift */,
-				CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */,
+				CEB9557F23768E7F00FDB138 /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				CED6DD552373F57F000825F5 /* Utilities.swift */,
+				CEFCD547238CC0B5007A3F64 /* UserService.swift */,
+				CE442BD2238FD9E400E6EC79 /* ImageService.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -225,12 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9A115D233DA7D9006860BF /* Build configuration list for PBXNativeTarget "Tourgid" */;
 			buildPhases = (
-				8795F9832D2839ED5B9D8F92 /* [CP] Check Pods Manifest.lock */,
+				95FE1A5C161A644B99AFCBAD /* [CP] Check Pods Manifest.lock */,
 				CE9A112C233DA7D8006860BF /* Sources */,
 				CE9A112D233DA7D8006860BF /* Frameworks */,
 				CE9A112E233DA7D8006860BF /* Resources */,
-				0B089581C90DE7BA1DE150CF /* [CP] Copy Pods Resources */,
-				115E65B708043ACB2D6BCCA2 /* [CP] Embed Pods Frameworks */,
+				A55224E62F3C222C1686562C /* [CP] Embed Pods Frameworks */,
+				2604E47E2FE95E69EF3D7214 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9A1160233DA7D9006860BF /* Build configuration list for PBXNativeTarget "TourgidTests" */;
 			buildPhases = (
-				5C705A6985724CD34AC25F4C /* [CP] Check Pods Manifest.lock */,
+				67B5CECD6673D07D955CDEB8 /* [CP] Check Pods Manifest.lock */,
 				CE9A1145233DA7D9006860BF /* Sources */,
 				CE9A1146233DA7D9006860BF /* Frameworks */,
 				CE9A1147233DA7D9006860BF /* Resources */,
@@ -264,12 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9A1163233DA7D9006860BF /* Build configuration list for PBXNativeTarget "TourgidUITests" */;
 			buildPhases = (
-				A9303417E1A022599FBDB701 /* [CP] Check Pods Manifest.lock */,
+				009743357EE95EFA9DF83050 /* [CP] Check Pods Manifest.lock */,
 				CE9A1150233DA7D9006860BF /* Sources */,
 				CE9A1151233DA7D9006860BF /* Frameworks */,
 				CE9A1152233DA7D9006860BF /* Resources */,
-				E643325095FBAB2A35F9B5CE /* [CP] Copy Pods Resources */,
-				40897AA936BDDD239BDCF4D4 /* [CP] Embed Pods Frameworks */,
+				1C569CF13C5C0602CE7862D7 /* [CP] Embed Pods Frameworks */,
+				ECB349DFD13E5FDA5016D767 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,102 +379,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B089581C90DE7BA1DE150CF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		115E65B708043ACB2D6BCCA2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		40897AA936BDDD239BDCF4D4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C705A6985724CD34AC25F4C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TourgidTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8795F9832D2839ED5B9D8F92 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Tourgid-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9303417E1A022599FBDB701 /* [CP] Check Pods Manifest.lock */ = {
+		009743357EE95EFA9DF83050 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,7 +401,102 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E643325095FBAB2A35F9B5CE /* [CP] Copy Pods Resources */ = {
+		1C569CF13C5C0602CE7862D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid-TourgidUITests/Pods-Tourgid-TourgidUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2604E47E2FE95E69EF3D7214 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67B5CECD6673D07D955CDEB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TourgidTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95FE1A5C161A644B99AFCBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tourgid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55224E62F3C222C1686562C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tourgid/Pods-Tourgid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECB349DFD13E5FDA5016D767 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -495,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE442BD0238E30FA00E6EC79 /* UserProfile.swift in Sources */,
 				CED6DD522373EAD3000825F5 /* LoginViewController.swift in Sources */,
 				CE1A4D0E2380839500E49778 /* EntryViewController.swift in Sources */,
 				CE9A1138233DA7D8006860BF /* MapViewController.swift in Sources */,
@@ -503,9 +529,11 @@
 				CEB9558023768E7F00FDB138 /* MainTabBarController.swift in Sources */,
 				CE9A1134233DA7D8006860BF /* AppDelegate.swift in Sources */,
 				CE9A113E233DA7D8006860BF /* Tourgid.xcdatamodeld in Sources */,
+				CEFCD548238CC0B5007A3F64 /* UserService.swift in Sources */,
 				CE9A1136233DA7D8006860BF /* SceneDelegate.swift in Sources */,
 				CED6DD562373F57F000825F5 /* Utilities.swift in Sources */,
 				CED6DD4E2373E7AF000825F5 /* SignUpViewController.swift in Sources */,
+				CE442BD3238FD9E400E6EC79 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,7 +704,7 @@
 		};
 		CE9A115E233DA7D9006860BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4AE281189E6092B626F270B /* Pods-Tourgid.debug.xcconfig */;
+			baseConfigurationReference = CCC0F7AF5859AB5055667D16 /* Pods-Tourgid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -695,7 +723,7 @@
 		};
 		CE9A115F233DA7D9006860BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A544D27C2C0C6B144F2A0779 /* Pods-Tourgid.release.xcconfig */;
+			baseConfigurationReference = EA8BE44EFCD5023E9BD1B22B /* Pods-Tourgid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -714,7 +742,7 @@
 		};
 		CE9A1161233DA7D9006860BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6574D112AE32696564EFBA83 /* Pods-TourgidTests.debug.xcconfig */;
+			baseConfigurationReference = 57A1AB8BDCA93DD6D0B5BAD9 /* Pods-TourgidTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -737,7 +765,7 @@
 		};
 		CE9A1162233DA7D9006860BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBCB91A5E72C21CF0068675A /* Pods-TourgidTests.release.xcconfig */;
+			baseConfigurationReference = 786B863D0527E348A4B75B04 /* Pods-TourgidTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -760,7 +788,7 @@
 		};
 		CE9A1164233DA7D9006860BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 315EE862CBA066EFFB83F4BD /* Pods-Tourgid-TourgidUITests.debug.xcconfig */;
+			baseConfigurationReference = 2C3EA1AD8C88E712A87C7D42 /* Pods-Tourgid-TourgidUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -781,7 +809,7 @@
 		};
 		CE9A1165233DA7D9006860BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8522599B4CC45223DAB28E1 /* Pods-Tourgid-TourgidUITests.release.xcconfig */;
+			baseConfigurationReference = C8A3A4A95562BBFD08B404A3 /* Pods-Tourgid-TourgidUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

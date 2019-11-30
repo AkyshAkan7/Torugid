@@ -46,6 +46,11 @@ class SignUpViewController: UIViewController {
         firstNameTextField.becomeFirstResponder()
     }
     
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     func setupView() {
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
@@ -90,10 +95,10 @@ class SignUpViewController: UIViewController {
         // Validate text fields
         let error = validateFields()
         
-        if error != nil {
-            showError(error!)
-        } else {
+        if error == nil {
             performSegue(withIdentifier: "goToAvatarPickerVC", sender: nil)
+        } else {
+            showError(error!)
         }
     }
     
@@ -106,11 +111,17 @@ class SignUpViewController: UIViewController {
             return "Please fill in all fields"
         }
         
+        // check if the email is valid
+        let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isEmailValid(cleanedEmail) == false {
+            return "Please type correct email"
+        }
+        
         // check if the password is secure
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
-            // password isn't secure enough
             return "Please make sure your password is at least 6 character long, contain 1 letter and 1 number"
         }
         

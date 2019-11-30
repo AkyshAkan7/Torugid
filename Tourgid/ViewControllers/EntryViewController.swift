@@ -20,6 +20,11 @@ class EntryViewController: UIViewController {
         setupView()
     }
     
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     func setupView() {
         loginButton.layer.cornerRadius = 10
         loginButton.layer.shadowOpacity = 1
