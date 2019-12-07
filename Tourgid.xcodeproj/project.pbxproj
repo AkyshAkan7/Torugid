@@ -14,6 +14,8 @@
 		CE1A4D102381651800E49778 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */; };
 		CE442BD0238E30FA00E6EC79 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE442BCF238E30FA00E6EC79 /* UserProfile.swift */; };
 		CE442BD3238FD9E400E6EC79 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE442BD2238FD9E400E6EC79 /* ImageService.swift */; };
+		CE47A32623993C5900A560F7 /* PlaceDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A32523993C5900A560F7 /* PlaceDescriptionViewController.swift */; };
+		CE63799223980C6F00B8F16E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63799123980C6F00B8F16E /* PlacesViewController.swift */; };
 		CE9A1134233DA7D8006860BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1133233DA7D8006860BF /* AppDelegate.swift */; };
 		CE9A1136233DA7D8006860BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1135233DA7D8006860BF /* SceneDelegate.swift */; };
 		CE9A1138233DA7D8006860BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A1137233DA7D8006860BF /* MapViewController.swift */; };
@@ -26,11 +28,13 @@
 		CE9A1168233DB500006860BF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9A1167233DB500006860BF /* MapKit.framework */; };
 		CE9AFD212371D5850018A1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9AFD202371D5850018A1B4 /* GoogleService-Info.plist */; };
 		CEAC46622379583A006A5C8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC46612379583A006A5C8E /* ProfileViewController.swift */; };
-		CEB9558023768E7F00FDB138 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9557F23768E7F00FDB138 /* MainTabBarController.swift */; };
 		CEC1FDEF237FCF7A0030DEC5 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1FDEE237FCF7A0030DEC5 /* ColorAssets.xcassets */; };
 		CED6DD4E2373E7AF000825F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */; };
 		CED6DD522373EAD3000825F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DD512373EAD3000825F5 /* LoginViewController.swift */; };
 		CED6DD562373F57F000825F5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DD552373F57F000825F5 /* Utilities.swift */; };
+		CEE34CAD23982AA5002762E0 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE34CAB23982AA5002762E0 /* PlaceTableViewCell.swift */; };
+		CEE34CAE23982AA5002762E0 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE34CAC23982AA5002762E0 /* PlaceTableViewCell.xib */; };
+		CEE34CB02398D324002762E0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE34CAF2398D324002762E0 /* Place.swift */; };
 		CEFCD548238CC0B5007A3F64 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCD547238CC0B5007A3F64 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,8 @@
 		CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		CE442BCF238E30FA00E6EC79 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		CE442BD2238FD9E400E6EC79 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		CE47A32523993C5900A560F7 /* PlaceDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDescriptionViewController.swift; sourceTree = "<group>"; };
+		CE63799123980C6F00B8F16E /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		CE9A1130233DA7D8006860BF /* Tourgid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tourgid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A1133233DA7D8006860BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A1135233DA7D8006860BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,11 +88,13 @@
 		CE9A1167233DB500006860BF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE9AFD202371D5850018A1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEAC46612379583A006A5C8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CEB9557F23768E7F00FDB138 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CEC1FDEE237FCF7A0030DEC5 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
 		CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CED6DD512373EAD3000825F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CED6DD552373F57F000825F5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CEE34CAB23982AA5002762E0 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		CEE34CAC23982AA5002762E0 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		CEE34CAF2398D324002762E0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		CEFCD547238CC0B5007A3F64 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		EA8BE44EFCD5023E9BD1B22B /* Pods-Tourgid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tourgid.release.xcconfig"; path = "Target Support Files/Pods-Tourgid/Pods-Tourgid.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				CE442BCF238E30FA00E6EC79 /* UserProfile.swift */,
+				CEE34CAF2398D324002762E0 /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +157,17 @@
 				CE9A1141233DA7D9006860BF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE47A3242399044200A560F7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CED6DD512373EAD3000825F5 /* LoginViewController.swift */,
+				CE1A4D0D2380839500E49778 /* EntryViewController.swift */,
+				CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */,
+				CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		CE9A1127233DA7D8006860BF = {
@@ -182,10 +202,12 @@
 				CED6DD572373F65B000825F5 /* ViewControllers */,
 				CE442BD1238FD95B00E6EC79 /* Storyboards */,
 				CE9A113F233DA7D9006860BF /* Assets.xcassets */,
+				CEC1FDEE237FCF7A0030DEC5 /* ColorAssets.xcassets */,
 				CE9A1144233DA7D9006860BF /* Info.plist */,
 				CE9A113C233DA7D8006860BF /* Tourgid.xcdatamodeld */,
 				CE9AFD202371D5850018A1B4 /* GoogleService-Info.plist */,
-				CEC1FDEE237FCF7A0030DEC5 /* ColorAssets.xcassets */,
+				CEE34CAB23982AA5002762E0 /* PlaceTableViewCell.swift */,
+				CEE34CAC23982AA5002762E0 /* PlaceTableViewCell.xib */,
 			);
 			path = Tourgid;
 			sourceTree = "<group>";
@@ -222,13 +244,11 @@
 		CED6DD572373F65B000825F5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE47A3242399044200A560F7 /* Authentication */,
 				CE9A1137233DA7D8006860BF /* MapViewController.swift */,
-				CED6DD512373EAD3000825F5 /* LoginViewController.swift */,
-				CED6DD4D2373E7AF000825F5 /* SignUpViewController.swift */,
-				CE1A4D0F2381651800E49778 /* AvatarPickerViewController.swift */,
 				CEAC46612379583A006A5C8E /* ProfileViewController.swift */,
-				CE1A4D0D2380839500E49778 /* EntryViewController.swift */,
-				CEB9557F23768E7F00FDB138 /* MainTabBarController.swift */,
+				CE63799123980C6F00B8F16E /* PlacesViewController.swift */,
+				CE47A32523993C5900A560F7 /* PlaceDescriptionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -359,6 +379,7 @@
 				CE9AFD212371D5850018A1B4 /* GoogleService-Info.plist in Resources */,
 				CE9A1140233DA7D9006860BF /* Assets.xcassets in Resources */,
 				CE9A113B233DA7D8006860BF /* Main.storyboard in Resources */,
+				CEE34CAE23982AA5002762E0 /* PlaceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,12 +547,15 @@
 				CE9A1138233DA7D8006860BF /* MapViewController.swift in Sources */,
 				CE1A4D102381651800E49778 /* AvatarPickerViewController.swift in Sources */,
 				CEAC46622379583A006A5C8E /* ProfileViewController.swift in Sources */,
-				CEB9558023768E7F00FDB138 /* MainTabBarController.swift in Sources */,
 				CE9A1134233DA7D8006860BF /* AppDelegate.swift in Sources */,
 				CE9A113E233DA7D8006860BF /* Tourgid.xcdatamodeld in Sources */,
+				CEE34CB02398D324002762E0 /* Place.swift in Sources */,
 				CEFCD548238CC0B5007A3F64 /* UserService.swift in Sources */,
 				CE9A1136233DA7D8006860BF /* SceneDelegate.swift in Sources */,
+				CE47A32623993C5900A560F7 /* PlaceDescriptionViewController.swift in Sources */,
+				CEE34CAD23982AA5002762E0 /* PlaceTableViewCell.swift in Sources */,
 				CED6DD562373F57F000825F5 /* Utilities.swift in Sources */,
+				CE63799223980C6F00B8F16E /* PlacesViewController.swift in Sources */,
 				CED6DD4E2373E7AF000825F5 /* SignUpViewController.swift in Sources */,
 				CE442BD3238FD9E400E6EC79 /* ImageService.swift in Sources */,
 			);

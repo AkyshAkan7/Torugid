@@ -10,24 +10,21 @@ import UIKit
 import GoogleMaps
 
 class MapViewController: UIViewController {
-
-    var zoom: Float = 13
     
     @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var locationButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
     
     private let locationManager = CLLocationManager()
+    var zoom: Float = 13
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let location = locationManager.location?.coordinate
-
-        if let location = location {
-            mapView.camera = GMSCameraPosition.camera(withTarget: location, zoom: zoom)
-        }
+        setupView()
         
-        mapView.isMyLocationEnabled = true
-        setupLocationManager()
+        setupLocation()
         addMarkers()
     }
     
@@ -38,7 +35,6 @@ class MapViewController: UIViewController {
             mapView.camera = GMSCameraPosition.camera(withTarget: location, zoom: zoom)
         }
     }
-    
     
     @IBAction func zoomInButton(_ sender: Any) {
         if zoom < 20 {
@@ -56,10 +52,22 @@ class MapViewController: UIViewController {
         mapView.animate(toZoom: zoom)
     }
     
+    func setupView() {
+        Utilities.styleMapButtons(locationButton)
+        Utilities.styleMapButtons(plusButton)
+        Utilities.styleMapButtons(minusButton)
+        
+    }
     
-    
-    func setupLocationManager() {
-        locationManager.delegate = self
+    func setupLocation() {
+        let location = locationManager.location?.coordinate
+
+        if let location = location {
+            mapView.camera = GMSCameraPosition.camera(withTarget: location, zoom: zoom)
+        }
+        
+        mapView.isMyLocationEnabled = true
+        
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
@@ -87,20 +95,9 @@ class MapViewController: UIViewController {
         let markerD = GMSMarker(position: markerDLocation)
         markerD.title = "Кок-Тюбе"
         markerD.snippet = "Гора"
+        
         markerD.map = mapView
     }
     
 }
 
-// MARK: - CLLocationManagerDelegate
-
-extension MapViewController: CLLocationManagerDelegate, GMSMapViewDelegate {
-
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        let location = locationManager.location?.coordinate
-//
-//        if let location = location {
-//            mapView.camera = GMSCameraPosition.camera(withTarget: location, zoom: zoom)
-//        }
-//    }
-}
